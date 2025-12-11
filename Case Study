@@ -1,0 +1,113 @@
+Velora Hotel Booking Analytics Case Study
+
+1. Introduction
+
+This case study presents end-to-end data analysis and reporting solutions for Velora Hotel bookings. The dataset includes 5,000+ booking records across multiple channels and loyalty levels. The goal was to design a structured analytics workflow, apply data cleaning, create robust DAX models, and build a fully interactive Power BI dashboard.
+
+2. Problem Statement
+
+Hotel booking data is often scattered across multiple systems, making it difficult to analyze customer behavior, loyalty program effectiveness, and revenue trends. This case study focuses on Velora Hotel bookings, aiming to design a solution that tracks and visualizes hotel performance for better insight into customer and revenue trends.
+
+3. Dataset Overview
+
+Data Source: Velora Hotel booking system
+
+Collected Bookings: 5,000+
+
+Key Columns: Booking ID | Loyalty Level | Channel | Status | Stay Date | Revenue | Room Rate | Cancellation
+
+Data Frequency: Daily booking updates
+
+Granularity: Booking-level (each row = one booking)
+
+Challenges
+
+High cancellation rate (~29%)
+
+Inconsistent loyalty tier naming
+
+Multiple booking channels with overlapping categories
+
+4. Solution Architecture
+
+Objective: Design an end-to-end pipeline for collecting, cleaning, and visualizing booking activity.
+
+Proposed Data Flow: Booking System → Data Extraction (Manual/API) → Data Cleaning (Excel/Python) → Data Processing (Aggregation by Loyalty, Channel, Status) → Data Storage (CSV / Power BI Dataset) → Visualization & Insights (Power BI Dashboard)
+
+Tools Used:
+
+Excel – Data cleaning and consolidation
+
+Python (pandas) – Pre-processing and transformation
+
+Power BI – Visualization and reporting
+
+5. Analytical Focus & Metrics
+
+Booking Count – Total number of bookings
+
+Cancellation Rate – Percentage of cancelled bookings
+
+Revenue – Total revenue generated
+
+Average Room Rate – Revenue per room
+
+Booking Trends – Daily and weekly booking patterns
+
+Loyalty Segmentation – Distribution of bookings across loyalty tiers
+
+Channel Mix – Contribution of different booking channels
+
+6. Power BI Dashboard Plan
+
+Dashboard Components:
+
+KPI Cards: Booking count, cancellation %, revenue, avg. room rate
+
+Line Chart: Daily booking trend
+
+Bar Chart: Bookings by day of week
+
+Horizontal Bar Chart: Bookings by loyalty level
+
+Table: Loyalty level by channel
+
+Filters: Date range, loyalty level, channel
+
+7. Expected Outcomes
+
+Identify peak booking periods and weekday patterns
+
+Analyze cancellation trends
+
+Understand loyalty program participation
+
+Evaluate channel performance
+
+Provide stakeholders with a live, visual summary of hotel performance
+
+8. Executive Summary of Insights
+
+Overall Performance: 5,000 bookings, $1M revenue, 28.7% cancellation rate
+
+Booking Trends: Mid-October peak; Tue–Thu strongest days
+
+Loyalty Segmentation: Non-members dominate (40%); Essential and Preferred tiers show strong engagement
+
+Booking Lead Time: 50% booked within a week; only 20% booked >4 weeks ahead
+
+Channel Mix: GDS and hotel-direct dominate; Velora.com underutilized
+
+9. Future Enhancements
+
+Automate data scraping from booking systems using APIs
+
+Integrate predictive modeling (forecasting demand and cancellations)
+
+Compare trends across multiple hotels or regions
+
+Enhance loyalty program analysis with customer lifetime value metrics
+
+Author: Ravi Teja — Data Analyst (Volunteer)
+
+License: MIT
